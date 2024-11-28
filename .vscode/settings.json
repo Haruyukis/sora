@@ -1,0 +1,33 @@
+{
+  // General
+  "editor.formatOnSave": true,
+
+  // Git
+  "git.autofetch": "all",
+  "git.autofetchPeriod": 60,
+  "git.pruneOnFetch": true,
+
+  // Json
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": ["--profile", "black"],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.ignore": ["**/.venv/**"],
+  "python.analysis.autoSearchPaths": false,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/bin/python" // Add your virtual environment Python interpreter here! :)
+}
